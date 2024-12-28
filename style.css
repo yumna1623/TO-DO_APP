@@ -1,0 +1,21 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#user-value{
+    margin-top: 70px;
+    width: 400px;
+    height: 30px;
+    border-radius: 30px;
+}
+.clear-btn{
+    margin-top: 70px;
+    border: none;
+    margin-left: 50px;
+}
+#todo-div{
+    background-color: #F1ECE6;
+    border-radius: 30px;
+    margin-top: 50px;
+}
