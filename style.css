@@ -1,21 +1,154 @@
-.logo{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #02142a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#user-value{
-    margin-top: 70px;
-    width: 400px;
-    height: 30px;
-    border-radius: 30px;
-}
-.clear-btn{
-    margin-top: 70px;
+    margin-top: 20px;
+  }
+  
+  #user-value {
     border: none;
-    margin-left: 50px;
-}
-#todo-div{
-    background-color: #F1ECE6;
+    margin-top: 30px;
+    width: 80%;
+    max-width: 400px;
+    height: 50px;
     border-radius: 30px;
-    margin-top: 50px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  #todo-div {
+    background-color: rgb(243, 201, 149);
+    border-radius: 30px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    min-height: 40vh;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .todo-v {
+    gap: 100px;
+  }
+  
+  .clear-btn {
+    margin-top: 0;
+    border: none;
+    margin-left: auto;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  }
+  
+  .delete-task {
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
+.add-btn {
+    background-color: #bd760e;
+    color: white;
+    height: 30px;
+    margin-top: 45px;
+    padding: 1px 10px; /* Adds padding for better button size */
+    border: none; /* Removes default border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Shows a pointer on hover */
+    display: inline-block; /* Makes it behave like a button */
+    text-align: center; /* Centers text inside the button */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.add-btn:hover {
+    background-color: #9f5d0d; /* Darker shade of the background color on hover */
+}
+
+.add-btn:focus {
+    outline: none; /* Removes the outline when the button is clicked */
+}
+
+.input{
+    gap: 20px;
+    display: flex;
+    margin-top:50px;
+  }
+  .delete-task:hover {
+    background-color: #d32f2f;
+  }
+  
+  @media (max-width: 768px) {
+    #user-value {
+      width: 90%;
+      font-size: 14px;
+    }
+  
+    #todo-div {
+      width: 95%;
+      max-width: 600px;
+    }
+  
+    .clear-btn {
+      width: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #user-value {
+      height: 40px;
+      font-size: 12px;
+    }
+  
+    .clear-btn {
+      width: 70px;
+      font-size: 12px;
+    }
+    .logo img{
+        width: 100px;
+    }
+    .input{
+        display: flex;
+        gap: 10px;
+    }
+    .add-btn {
+        font-size: 12px;
+        padding: 5px 9px;
+        height: 30px;
+        margin-top: 35px;
+      }
+  }
+  
